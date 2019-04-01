@@ -1,0 +1,24 @@
+{
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "git.autofetch": true,
+  "html.format.wrapLineLength": 80,
+  "editor.rulers": [80],
+  "terminal.integrated.rendererType": "dom",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "prettier.eslintIntegration": true,
+  "prettier.semi": false,
+  "prettier.trailingComma": "all",
+  "prettier.singleQuote": true,
+  "gitlens.mode.active": "zen",
+  "git.enableSmartCommit": true,
+  "emojisense.languages": {
+    "javascript": true
+  },
+  "git.confirmSync": false
+}
