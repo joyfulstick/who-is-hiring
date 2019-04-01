@@ -1,0 +1,25 @@
+{
+  "name": "who-is-hiring",
+  "version": "1.0.0",
+  "description": "ASK HN: Who is hiring",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joyfulstick/who-is-hiring.git"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "styled-components",
+    "firebase"
+  ],
+  "author": "Michal Kijewicz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joyfulstick/who-is-hiring/issues"
+  },
+  "homepage": "https://github.com/joyfulstick/who-is-hiring#readme"
+}
