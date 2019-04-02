@@ -14,9 +14,9 @@
   },
   "keywords": [
     "react",
-    "redux",
-    "styled-components",
-    "firebase"
+    "react hooks",
+    "firebase",
+    "styled-components"
   ],
   "author": "Michal Kijewicz",
   "license": "ISC",
@@ -44,5 +44,9 @@
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0",
     "webpack-dev-server": "^3.2.1"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.4.0",
+    "firebase": "^5.9.2"
   }
 }
