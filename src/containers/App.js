@@ -4,7 +4,7 @@ import useFirebaseSub from '../hooks/useFirebaseSub'
 import List from './List'
 
 const App = () => {
-  const [stories, setStories] = useState([])
+  const [stories, setStories] = useState(null)
   const jobstories = useFirebaseSub('/v0/jobstories')
   useEffect(() => {
     setStories(jobstories)

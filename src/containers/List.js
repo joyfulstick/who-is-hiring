@@ -3,7 +3,7 @@ import Item from '../components/Item'
 import useFirebaseSub from '../hooks/useFirebaseSub'
 
 const List = ({ storie }) => {
-  const [content, setContent] = useState([])
+  const [content, setContent] = useState(null)
 
   const item = useFirebaseSub(`/v0/item/${storie}`)
   useEffect(() => {
