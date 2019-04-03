@@ -4,6 +4,8 @@
   "description": "ASK HN: Who is hiring",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "start": "webpack-dev-server --open --mode development --port 3333 --host 0.0.0.0",
     "build": "webpack --mode production",
     "test": "jest --watch"
@@ -23,7 +25,7 @@
   "bugs": {
     "url": "https://github.com/joyfulstick/who-is-hiring/issues"
   },
-  "homepage": "https://github.com/joyfulstick/who-is-hiring#readme",
+  "homepage": "https://joyfulstick.github.io/who-is-hiring",
   "devDependencies": {
     "@babel/core": "^7.4.0",
     "@babel/preset-env": "^7.4.2",
@@ -47,6 +49,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.4.0",
-    "firebase": "^5.9.2"
+    "firebase": "^5.9.2",
+    "gh-pages": "^2.0.1"
   }
 }
