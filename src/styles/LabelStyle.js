@@ -17,7 +17,7 @@ const InputStyle = styled.label`
     }
     &:checked {
       background: ${p => p.theme.primary};
-      &:after {
+      &::after {
         display: block;
       }
     }
