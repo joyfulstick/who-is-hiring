@@ -2,8 +2,9 @@ import 'firebase/database'
 import React, { useEffect, useState } from 'react'
 import Filters from '../components/Filters'
 import useFirebaseSub from '../hooks/useFirebaseSub'
+import HeaderStyle from '../styles/HeaderStyle'
+import MainStyle from '../styles/MainStyle'
 import List from './List'
-
 const App = () => {
   const [stories, setStories] = useState(null)
   const jobstories = useFirebaseSub('/v0/jobstories')
@@ -22,12 +23,16 @@ const App = () => {
 
   return (
     <>
-      <Filters handleChange={handleChange} filters={filters} />
-      {!stories ? (
-        <p>LOADING LIST...</p>
-      ) : (
-        stories.map(s => <List key={s} storie={s} filters={filters} />)
-      )}
+      <HeaderStyle>
+        <Filters handleChange={handleChange} filters={filters} />
+      </HeaderStyle>
+      <MainStyle>
+        {!stories ? (
+          <p>LOADING LIST...</p>
+        ) : (
+          stories.map(s => <List key={s} storie={s} filters={filters} />)
+        )}
+      </MainStyle>
     </>
   )
 }

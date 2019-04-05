@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 const InputStyle = styled.label`
+  margin: 1rem;
   input[type='checkbox'] {
     cursor: pointer;
     appearance: none;

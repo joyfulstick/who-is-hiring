@@ -1,7 +1,8 @@
 import React from 'react'
+import LabelStyle from '../styles/LabelStyle'
 
 const Select = ({ name, value, handleChange, options }) => (
-  <label>
+  <LabelStyle>
     {name}
     <select name={name} value={value} onChange={handleChange}>
       {options.map(o => (
@@ -10,7 +11,7 @@ const Select = ({ name, value, handleChange, options }) => (
         </option>
       ))}
     </select>
-  </label>
+  </LabelStyle>
 )
 
 export default Select

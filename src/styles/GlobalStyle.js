@@ -8,6 +8,7 @@ const theme = {
   overlayLite: '#fffa',
   overlay: 'rgba(255, 255, 255, 0.1)',
   shadow: '1px 2px 3px 0 rgba(0, 0, 0, 0.1)',
+  maxWidth: '1200px',
 }
 
 const GlobalStyle = createGlobalStyle`
@@ -24,6 +25,10 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    font-size: 3vmin;
+    @media (min-width: ${theme.maxWidth}) {
+      font-size: 16px;
+    }
     background: ${theme.background};
     color: ${theme.overlayLite};
   }

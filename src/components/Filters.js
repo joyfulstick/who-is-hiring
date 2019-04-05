@@ -1,4 +1,5 @@
 import React from 'react'
+import FiltersStyle from '../styles/FiltersStyle'
 import Input from './Input'
 import Select from './Select'
 
@@ -24,14 +25,14 @@ const Filters = ({ handleChange, filters: { position, salary, isRemote } }) => {
   ]
 
   return (
-    <header>
+    <FiltersStyle>
       {selects.map(select => (
         <Select key={select.name} {...select} />
       ))}
       {inputs.map(input => (
         <Input key={input.name} {...input} />
       ))}
-    </header>
+    </FiltersStyle>
   )
 }
 

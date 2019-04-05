@@ -1,8 +1,8 @@
 import React from 'react'
-import InputStyle from '../styles/InputStyle'
+import LabelStyle from '../styles/LabelStyle'
 
 const Input = ({ name, type, min, max, value, checked, handleChange }) => (
-  <InputStyle>
+  <LabelStyle>
     {name}
     {type === 'range' && value}
     <input
@@ -14,7 +14,7 @@ const Input = ({ name, type, min, max, value, checked, handleChange }) => (
       checked={checked}
       onChange={handleChange}
     />
-  </InputStyle>
+  </LabelStyle>
 )
 
 export default Input
