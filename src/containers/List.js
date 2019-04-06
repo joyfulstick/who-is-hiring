@@ -10,23 +10,24 @@ const List = ({ storie, filters: { isRemote, position, salary } }) => {
     setContent(item)
   }, [item])
 
-  const r1 = isRemote ? /\b(\w*remote\w*)\b/i : /.*/
-  const r2 = Object.is(position, 'all')
+  const regExpRemote = isRemote ? /\b(\w*remote\w*)\b/i : /.*/
+  const regExpPosition = Object.is(position, 'all')
     ? /.*/
     : new RegExp(`\\b(\\w*${position}\\w*)\\b`, 'i')
-  const r3 = /\d\d/
+  const regExpDigits = /\d\d/
+
   const payment = content
-    ? r3.exec(content.title)
-      ? +r3.exec(content.title)[0]
+    ? regExpDigits.exec(content.title)
+      ? +regExpDigits.exec(content.title)[0]
       : 0
     : 0
 
   return !content ? (
     <p>LOADING ITEM...</p>
   ) : (
-    r1.test(content.title) && r2.test(content.title) && payment >= salary && (
-      <Item content={content} />
-    )
+    regExpRemote.test(content.title) &&
+      regExpPosition.test(content.title) &&
+      payment >= salary && <Item content={content} />
   )
 }
 export default List

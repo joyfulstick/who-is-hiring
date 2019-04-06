@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Select /> renders correctly - type checkbox 1`] = `
+<styled.label>
+  <span>
+    position
+  </span>
+  <select
+    name="position"
+    onChange={[MockFunction]}
+    value="all"
+  >
+    <option
+      key="all"
+      value="all"
+    >
+      all
+    </option>
+    <option
+      key="engineer"
+      value="engineer"
+    >
+      engineer
+    </option>
+    <option
+      key="data scientist"
+      value="data scientist"
+    >
+      data scientist
+    </option>
+    <option
+      key="designer"
+      value="designer"
+    >
+      designer
+    </option>
+    <option
+      key="manager"
+      value="manager"
+    >
+      manager
+    </option>
+  </select>
+</styled.label>
+`;

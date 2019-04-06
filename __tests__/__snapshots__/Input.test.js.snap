@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Input /> renders correctly - type checkbox 1`] = `
+<styled.label>
+  <span>
+    isRemote
+  </span>
+  <input
+    checked={true}
+    name="isRemote"
+    onChange={[MockFunction]}
+    type="checkbox"
+  />
+</styled.label>
+`;
+
+exports[`<Input /> renders correctly - type range 1`] = `
+<styled.label>
+  <span>
+    salary
+  </span>
+  <input
+    max={20}
+    min={0}
+    name="salary"
+    onChange={[MockFunction]}
+    type="range"
+    value={5}
+  />
+  <span
+    className="amount"
+  >
+    5
+  </span>
+</styled.label>
+`;

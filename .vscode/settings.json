@@ -20,5 +20,6 @@
   "emojisense.languages": {
     "javascript": true
   },
-  "git.confirmSync": false
+  "git.confirmSync": false,
+  "deepscan.enable": true
 }

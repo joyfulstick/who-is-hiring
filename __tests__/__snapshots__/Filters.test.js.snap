@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Filters /> renders correctly 1`] = `
+<styled.div>
+  <Select
+    handleChange={[MockFunction]}
+    key="position"
+    name="position"
+    options={
+      Array [
+        "all",
+        "engineer",
+        "data scientist",
+        "designer",
+        "manager",
+      ]
+    }
+    value="all"
+  />
+  <Input
+    handleChange={[MockFunction]}
+    key="salary"
+    max="20"
+    min="0"
+    name="salary"
+    type="range"
+    value={5}
+  />
+  <Input
+    checked={false}
+    handleChange={[MockFunction]}
+    key="isRemote"
+    name="isRemote"
+    type="checkbox"
+  />
+</styled.div>
+`;
