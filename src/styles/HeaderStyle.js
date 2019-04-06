@@ -3,6 +3,7 @@ import styled from 'styled-components'
 const HeaderStyle = styled.header`
   position: fixed;
   top: 0;
+  z-index: 1;
   min-height: 8rem;
   width: 100vw;
   background: ${p => p.theme.secondaryDark};
