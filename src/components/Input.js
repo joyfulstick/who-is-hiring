@@ -3,8 +3,7 @@ import LabelStyle from '../styles/LabelStyle'
 
 const Input = ({ name, type, min, max, value, checked, handleChange }) => (
   <LabelStyle>
-    {name}
-    {type === 'range' && value}
+    <span>{name}</span>
     <input
       name={name}
       type={type}
@@ -14,6 +13,7 @@ const Input = ({ name, type, min, max, value, checked, handleChange }) => (
       checked={checked}
       onChange={handleChange}
     />
+    {type === 'range' && <span className="amount">{value}</span>}
   </LabelStyle>
 )
 

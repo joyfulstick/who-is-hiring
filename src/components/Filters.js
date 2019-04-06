@@ -20,7 +20,7 @@ const Filters = ({ handleChange, filters: { position, salary, isRemote } }) => {
       name: 'position',
       value: position,
       handleChange,
-      options: ['all', 'engineer', 'designer', 'manager'],
+      options: ['all', 'engineer', 'data scientist', 'designer', 'manager'],
     },
   ]
 

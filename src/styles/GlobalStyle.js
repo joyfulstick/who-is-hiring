@@ -5,7 +5,7 @@ const theme = {
   secondary: '#0098fe',
   secondaryDark: '#00233a',
   background: '#212121',
-  overlayLite: '#fffa',
+  overlayLite: 'rgba(255, 255, 255, 0.67)',
   overlay: 'rgba(255, 255, 255, 0.1)',
   shadow: '1px 2px 3px 0 rgba(0, 0, 0, 0.1)',
   maxWidth: '1200px',

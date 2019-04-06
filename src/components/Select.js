@@ -3,7 +3,7 @@ import LabelStyle from '../styles/LabelStyle'
 
 const Select = ({ name, value, handleChange, options }) => (
   <LabelStyle>
-    {name}
+    <span>{name}</span>
     <select name={name} value={value} onChange={handleChange}>
       {options.map(o => (
         <option key={o} value={o}>
