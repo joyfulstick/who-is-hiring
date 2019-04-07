@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Item from '../components/Item'
-import useFirebaseSub from '../hooks/useFirebaseSub'
+import { useFirebaseSub } from '../hooks/useFirebaseSub'
 
 const List = ({ storie, filters: { isRemote, position, salary } }) => {
   const [content, setContent] = useState(null)

@@ -1,7 +1,7 @@
 import 'firebase/database'
 import React, { useEffect, useState } from 'react'
 import Filters from '../components/Filters'
-import useFirebaseSub from '../hooks/useFirebaseSub'
+import { useFirebaseSub } from '../hooks/useFirebaseSub'
 import HeaderStyle from '../styles/HeaderStyle'
 import MainStyle from '../styles/MainStyle'
 import List from './List'
@@ -10,6 +10,7 @@ const App = () => {
   const [stories, setStories] = useState(null)
 
   const jobstories = useFirebaseSub('/v0/jobstories')
+  console.log(jobstories)
   useEffect(() => {
     setStories(jobstories)
   }, [jobstories])

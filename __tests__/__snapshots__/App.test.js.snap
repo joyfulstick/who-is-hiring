@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders corretly 1`] = `
+<Fragment>
+  <styled.header>
+    <Filters
+      filters={
+        Object {
+          "isRemote": false,
+          "position": "all",
+          "salary": 5,
+        }
+      }
+      handleChange={[Function]}
+    />
+  </styled.header>
+  <styled.main>
+    <p>
+      LOADING LIST...
+    </p>
+  </styled.main>
+</Fragment>
+`;

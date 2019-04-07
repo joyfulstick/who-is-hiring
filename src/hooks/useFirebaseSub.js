@@ -6,7 +6,7 @@ firebase.initializeApp({
   databaseURL: 'https://hacker-news.firebaseio.com',
 })
 
-export default function(path) {
+export function useFirebaseSub(path) {
   const dbRef = firebase
     .database()
     .ref()
